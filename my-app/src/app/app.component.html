@@ -1,0 +1,20 @@
+<button [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="">Home</button>
+
+<button routerLinkActive="active" routerLink="product">Product</button>
+
+<button routerLinkActive="active" routerLink="about">About</button>
+
+<button routerLinkActive="active" routerLink="contect">Contect</button>
+
+<button routerLink="users">Users</button>
+
+<button [routerLink]="['query']" [queryParams]="{abc:123}">Query</button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<button (click)="navi()">About-Query-Parmas</button>
+<p>queryParams:{{querprams}}</p>
+
+<router-outlet></router-outlet>
